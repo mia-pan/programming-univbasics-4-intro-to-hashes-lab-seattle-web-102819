@@ -24,7 +24,11 @@ def my_hash_creator(key, value)
 end
 
 def read_from_hash(hash, key)
-  if
+  if hash[key]
+    put hash[key]
+  else 
+    put nil 
+  end
   # return the correct value using the hash and key parameters
 end
 
